@@ -16,25 +16,21 @@ const ContactCard = (): JSX.Element => {
   };
 
   return (
-    <div className="ms-font-m">
-      <HoverCard
-        type={HoverCardType.plain}
-        plainCardProps={plainCardProps}
-        instantOpenOnClick={true}>
+    <HoverCard
+      type={HoverCardType.plain}
+      plainCardProps={plainCardProps}
+      instantOpenOnClick={true}>
 
-        <Persona
-          size={PersonaSize.size72}
-          imageUrl={user.photoUrl}
-          text={user.name}
-          secondaryText={user.title}
-          tertiaryText={user.department}
-        />
-      </HoverCard>
-    </div>
+      <Persona
+        size={PersonaSize.size72}
+        imageUrl={user.photoUrl}
+        text={user.name}
+        secondaryText={user.title}
+        tertiaryText={user.department}
+      />
+    </HoverCard>
   );
-
-
-};
+}
 
 const renderPlainCard = (item: any): JSX.Element => {
   return (

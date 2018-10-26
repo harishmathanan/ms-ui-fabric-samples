@@ -3,6 +3,7 @@ import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
 
 import ContactCard from './components/contactCard';
+import DocumentList from './components/documentList';
 
 const App = (): JSX.Element => {
   initializeIcons();
@@ -13,8 +14,9 @@ const App = (): JSX.Element => {
         <h1 className="ms-font-xxl">MS UI Fabric</h1>
       </div>
 
-      <div style={{ marginTop: 32 }}>
+      <div className="ms-font-m" style={{ marginTop: 32 }}>
         <ContactCard />
+        <DocumentList />
       </div>
     </Fabric>
   );
